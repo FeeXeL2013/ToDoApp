@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.SignUppController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #2196f3;">
+         <children>
+            <AnchorPane layoutY="85.0" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #e8f5e9;">
+               <children>
+                  <Button fx:id="signUpApplyButton" layoutX="276.0" layoutY="282.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="149.0" style="-fx-background-color: #547fff;" text="Apply" textAlignment="CENTER" textFill="#fffcfc">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutY="331.0" prefHeight="75.0" prefWidth="700.0" style="-fx-background-color: #2196f3;" />
+                  <AnchorPane prefHeight="35.0" prefWidth="700.0" style="-fx-background-color: #004ba0;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="292.0" layoutY="7.0" prefHeight="22.0" prefWidth="116.0" text="Sign Upp" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <TextField fx:id="signUpFirstName" layoutX="276.0" layoutY="58.0" promptText="First name" />
+                  <TextField fx:id="signUpLastName" layoutX="276.0" layoutY="94.0" promptText="Last name" />
+                  <TextField fx:id="signUpUserName" layoutX="276.0" layoutY="130.0" promptText="Username" />
+                  <TextField fx:id="signUpLocation" layoutX="276.0" layoutY="234.0" promptText="Locatiom" />
+                  <CheckBox fx:id="signUpCheckBoxMale" layoutX="276.0" layoutY="203.0" mnemonicParsing="false" selected="true" text="Male" textFill="#547fff" />
+                  <CheckBox fx:id="signUpCheckBoxFemale" layoutX="364.0" layoutY="203.0" mnemonicParsing="false" text="Female" textFill="#547fff" />
+                  <PasswordField fx:id="signUpPassword" layoutX="276.0" layoutY="163.0" promptText="Password" />
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="16.0" prefHeight="65.0" prefWidth="140.0" text="ToDoApp" textFill="#f7f7f8">
+               <font>
+                  <Font name="System Bold Italic" size="31.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

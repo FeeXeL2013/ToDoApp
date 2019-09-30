@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #2196f3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AddItemController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #e8f5e9;">
+         <children>
+            <AnchorPane layoutY="331.0" prefHeight="75.0" prefWidth="700.0" style="-fx-background-color: #2196f3;" />
+            <Label fx:id="notTaskLabel" alignment="CENTER" layoutX="249.0" layoutY="107.0" prefHeight="38.0" prefWidth="202.0" text="Not, Tasks for Today, yet!" textFill="#3a6bff">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="addButton" fitHeight="56.0" fitWidth="65.0" layoutX="322.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.7;">
+               <image>
+                  <Image url="@../assets/baseline_add_box_black_48dp.png" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="90.0" prefWidth="700.0" style="-fx-background-color: #2196f3;">
+               <children>
+                  <Label alignment="CENTER" layoutX="27.0" layoutY="16.0" prefHeight="65.0" prefWidth="140.0" text="ToDoApp" textFill="#f7f7f8">
+                     <font>
+                        <Font name="System Bold Italic" size="31.0" />
+                     </font>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
